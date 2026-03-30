@@ -5,7 +5,7 @@
         "root<enter><wait>",
         "ifconfig eth0 up \u0026\u0026 udhcpc -i eth0<enter><wait5>",
         "wget http://{{ .HTTPIP }}:{{ .HTTPPort }}/answers<enter><wait>",
-        "BOOT_SIZE=50 setup-alpine -f answers<enter><wait10>",
+        "BOOT_SIZE=100 setup-alpine -f answers<enter><wait10>",
         "{{user `root_pw`}}<enter><wait>",
         "{{user `root_pw`}}<enter><wait15>",
         "no<enter><wait5>",
